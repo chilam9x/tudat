@@ -1,50 +1,42 @@
 <!DOCTYPE html>
-<html lang="en" >
-	<!-- begin::Head -->
-	<head>
-		<meta charset="utf-8" />
-		<title>
-			Login Tứ Đạt
-		</title>
-		<meta name="description" content="Latest updates and statistic charts">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!--begin::Web font -->
-		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
-		<script>
-          WebFont.load({
-            google: {"families":["Poppins:300,400,500,600,700","Roboto:300,400,500,600,700"]},
-            active: function() {
-                sessionStorage.fonts = true;
-            }
-          });
-		</script>
-		<!--end::Web font -->
-        <!--begin::Base Styles -->
-		<link href="public/assets/vendors/base/vendors.bundle.css" rel="stylesheet" type="text/css" />
-		<link href="public/assets/demo/default/base/style.bundle.css" rel="stylesheet" type="text/css" />
-		<!--end::Base Styles -->
-		<link rel="shortcut icon" href="public/assets/demo/default/media/img/logo/favicon.ico" />
-	</head>
-	<!-- end::Head -->
-    <!-- end::Body -->
-	<body class="m--skin- m-header--fixed m-header--fixed-mobile m-aside-left--enabled m-aside-left--skin-dark m-aside-left--offcanvas m-footer--push m-aside--offcanvas-default"  >
-		<!-- begin:: Page -->
-		<div class="m-grid m-grid--hor m-grid--root m-page">
-			<div class="m-grid__item m-grid__item--fluid m-grid m-grid--hor m-login m-login--signin m-login--2 m-login-2--skin-1" id="m_login" style="background-image: url(public/assets/app/media/img//bg/bg-1.jpg);">
-				<div class="m-grid__item m-grid__item--fluid m-login__wrapper">
-                    @yield('content')
-				</div>
-			</div>
-		</div>
-		<!-- end:: Page -->
-    	<!--begin::Base Scripts -->
-		<script src="public/assets/vendors/base/vendors.bundle.js" type="text/javascript"></script>
-		<script src="public/assets/demo/default/base/scripts.bundle.js" type="text/javascript"></script>
-		<!--end::Base Scripts -->
-        <!--begin::Page Snippets -->
-		<script src="public/assets/snippets/pages/user/login.js" type="text/javascript"></script>
-		<!--end::Page Snippets -->
-	</body>
-	<!-- end::Body -->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Đăng nhập Tứ Đạt</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="public/assets/plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- icheck bootstrap -->
+    <link rel="stylesheet" href="public/assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="public/assets/dist/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+
+<body class="hold-transition login-page">
+    <div class="login-box">
+        <div class="login-logo">
+            <a href="../../index2.html"><b>Admin</b>Tứ Đạt</a>
+        </div>
+        <!-- /.login-logo -->
+        @yield("content")
+    </div>
+    <!-- /.login-box -->
+
+    <!-- jQuery -->
+    <script src="public/assets/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="public/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="public/assets/dist/js/adminlte.min.js"></script>
+
+</body>
+
 </html>

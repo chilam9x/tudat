@@ -87,7 +87,7 @@
                             <span>
                                 <i class="la la-cart-plus"></i>
                                 <span>
-                                    Thêm mới sản phẩm
+                                    Thêm mới Hàng hóa
                                 </span>
                             </span>
                         </a>
